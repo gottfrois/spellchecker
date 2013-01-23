@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require './lib/spell_generator'
+
+spell_generator = SpellGenerator.new('/usr/share/dict/words')
+spell_generator.generate(ARGV[0])

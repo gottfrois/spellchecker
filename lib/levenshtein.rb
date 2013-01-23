@@ -1,14 +1,16 @@
 module Levenshtein
 
-  def levenshtein(s, t)
+  module_function
+
+  def check(s, t)
     n = s.length
     m = t.length
     return m if (0 == n)
     return n if (0 == m)
-    
+
     d = (0..m).to_a
     x = nil
-    
+
     (0...n).each do |i|
       e = i+1
       (0...m).each do |j|
@@ -22,7 +24,7 @@ module Levenshtein
         e = x
       end
       d[m] = x
-    end   
+    end
     return x
   end
 end

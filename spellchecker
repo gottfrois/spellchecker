@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'io/wait'
+require './lib/levenshtein'
+require './lib/spell_checker'
+
+SpellChecker.initialize_dictionary('/usr/share/dict/words')
+SpellChecker.show_prompt
