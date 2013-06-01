@@ -1,4 +1,4 @@
-Instructions are [here](http://www.twitch.tv/problems/spellcheck)
+Instruction are [here](http://www.twitch.tv/problems/spellcheck)
 
 # SpellChecker
 
